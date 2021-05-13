@@ -1,0 +1,963 @@
+2021-04-26 17:48:23,925 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-26 17:52:32,461 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\recruitment\settings.py changed, reloading.
+2021-04-26 17:53:20,548 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-26 17:54:33,595 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-26 17:54:34,472 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-26 17:55:18,430 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-26 17:55:19,333 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-26 17:55:44,442 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-26 17:55:45,398 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-26 17:56:42,895 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-26 17:56:43,775 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-26 17:57:12,670 interview.admin 37 INFO     admin exported 5 candidate recoeds
+2021-04-26 18:17:30,919 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-26 18:23:24,597 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-26 18:23:25,530 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-26 18:24:16,766 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-26 18:24:17,676 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-26 18:28:51,767 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-26 18:28:52,734 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-26 18:29:10,442 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-26 18:29:11,334 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-26 18:29:37,676 django.request 228 ERROR    Internal Server Error: /admin/interview/candidate/4/change/
+Traceback (most recent call last):
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\options.py", line 607, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\sites.py", line 231, in inner
+    return view(request, *args, **kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\options.py", line 1641, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\sofeware\python\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\options.py", line 1555, in _changeform_view
+    ModelForm = self.get_form(request, obj, change=not add)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\options.py", line 672, in get_form
+    readonly_fields = self.get_readonly_fields(request, obj)
+  File "D:\github\recruitment\recruitment\interview\admin.py", line 69, in get_readonly_fields
+    group_names = self.get_group_names(request.user)
+AttributeError: 'CandidateAdmin' object has no attribute 'get_group_names'
+2021-04-26 18:31:56,082 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-26 18:31:56,933 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-26 18:32:04,540 django.request 228 ERROR    Internal Server Error: /admin/interview/candidate/5/change/
+Traceback (most recent call last):
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\options.py", line 607, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\sites.py", line 231, in inner
+    return view(request, *args, **kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\options.py", line 1641, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\sofeware\python\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\options.py", line 1555, in _changeform_view
+    ModelForm = self.get_form(request, obj, change=not add)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\options.py", line 672, in get_form
+    readonly_fields = self.get_readonly_fields(request, obj)
+  File "D:\github\recruitment\recruitment\interview\admin.py", line 69, in get_readonly_fields
+    group_names = self.get_group_names(request.user)
+AttributeError: 'CandidateAdmin' object has no attribute 'get_group_names'
+2021-04-26 22:42:43,581 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-26 22:42:44,668 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-26 22:43:34,854 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-26 22:43:35,790 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-26 22:44:51,083 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-26 22:44:51,932 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-26 22:46:01,709 interview.admin 80 INFO     insterviewer is user for first_interviewer
+2021-04-26 22:46:01,713 interview.admin 80 INFO     insterviewer is user for first_interviewer
+2021-04-26 22:48:58,103 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-26 22:48:58,955 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-26 22:53:34,901 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-26 22:53:35,771 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-26 22:58:12,552 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-26 22:58:13,448 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-26 22:58:17,560 django.request 228 ERROR    Internal Server Error: /admin/interview/candidate/
+Traceback (most recent call last):
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\options.py", line 607, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\sites.py", line 231, in inner
+    return view(request, *args, **kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\options.py", line 1678, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "D:\github\recruitment\recruitment\interview\admin.py", line 79, in get_changelist_instance
+    self.list_editable = self.get_list_editable(request)
+  File "D:\github\recruitment\recruitment\interview\admin.py", line 71, in get_list_editable
+    if request.user.is_super_user or 'HR' in group_names:
+  File "C:\sofeware\python\lib\site-packages\django\utils\functional.py", line 225, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'User' object has no attribute 'is_super_user'
+2021-04-26 22:58:53,758 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-26 22:58:54,635 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-26 23:03:24,238 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-26 23:04:00,738 interview.admin 99 INFO     insterviewer is user for first_interviewer
+2021-04-26 23:04:00,743 interview.admin 99 INFO     insterviewer is user for first_interviewer
+2021-04-26 23:07:38,335 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-26 23:07:39,275 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-26 23:09:11,869 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-26 23:09:12,765 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-26 23:11:08,688 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-26 23:11:09,710 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-26 23:11:54,330 interview.admin 100 INFO     insterviewer is user for first_interviewer
+2021-04-26 23:11:54,333 interview.admin 100 INFO     insterviewer is user for first_interviewer
+2021-04-26 23:13:40,880 django.request 228 ERROR    Internal Server Error: /admin/interview/candidate/4/change/
+Traceback (most recent call last):
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\options.py", line 607, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\sites.py", line 231, in inner
+    return view(request, *args, **kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\options.py", line 1641, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\sofeware\python\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\options.py", line 1555, in _changeform_view
+    ModelForm = self.get_form(request, obj, change=not add)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\options.py", line 669, in get_form
+    fields = flatten_fieldsets(self.get_fieldsets(request, obj))
+  File "D:\github\recruitment\recruitment\interview\admin.py", line 158, in get_fieldsets
+    return default_fieldsets_second
+NameError: name 'default_fieldsets_second' is not defined
+2021-04-26 23:13:59,164 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-26 23:14:00,197 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-26 23:14:03,481 interview.admin 100 INFO     insterviewer is user for second_interviewer
+2021-04-26 23:14:03,484 interview.admin 100 INFO     insterviewer is user for second_interviewer
+2021-04-26 23:15:03,179 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-26 23:15:04,037 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-26 23:16:07,639 django.request 228 ERROR    Internal Server Error: /admin/interview/candidate/4/change/
+Traceback (most recent call last):
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\options.py", line 607, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\sites.py", line 231, in inner
+    return view(request, *args, **kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\options.py", line 1641, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\sofeware\python\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\options.py", line 1522, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\options.py", line 1555, in _changeform_view
+    ModelForm = self.get_form(request, obj, change=not add)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\options.py", line 669, in get_form
+    fields = flatten_fieldsets(self.get_fieldsets(request, obj))
+  File "D:\github\recruitment\recruitment\interview\admin.py", line 159, in get_fieldsets
+    return default_fieldsets
+NameError: name 'default_fieldsets' is not defined
+2021-04-26 23:16:21,878 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-26 23:16:22,738 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-26 23:19:26,888 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-26 23:19:27,870 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-26 23:20:08,105 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-26 23:20:09,022 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-26 23:25:26,246 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-26 23:25:27,243 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-26 23:30:14,005 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-26 23:30:14,924 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-26 23:33:09,722 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-26 23:33:10,635 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-26 23:34:35,598 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-26 23:34:36,455 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-26 23:35:15,189 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-26 23:35:16,062 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 16:50:09,602 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 16:50:10,990 django.request 228 WARNING  Not Found: /
+2021-04-27 16:50:15,734 django.request 228 WARNING  Not Found: /favicon.ico
+2021-04-27 16:53:17,226 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-27 16:53:18,084 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 16:54:31,696 django.request 228 ERROR    Internal Server Error: /joblist/
+Traceback (most recent call last):
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\github\recruitment\recruitment\jobs\views.py", line 9, in joblist
+    template = loader.get_template('jobs/joblist.html')
+  File "C:\sofeware\python\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: jobs/joblist.html
+2021-04-27 16:55:47,356 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\jobs\views.py changed, reloading.
+2021-04-27 16:55:48,271 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 16:55:48,760 django.request 228 ERROR    Internal Server Error: /joblist/
+Traceback (most recent call last):
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\github\recruitment\recruitment\jobs\views.py", line 9, in joblist
+    template = loader.get_template('jobs/templates/joblist.html')
+  File "C:\sofeware\python\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: jobs/templates/joblist.html
+2021-04-27 16:56:09,826 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\jobs\views.py changed, reloading.
+2021-04-27 16:56:10,693 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 16:56:13,773 django.request 228 ERROR    Internal Server Error: /joblist/
+Traceback (most recent call last):
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\github\recruitment\recruitment\jobs\views.py", line 9, in joblist
+    template = loader.get_template('./templates/joblist.html')
+  File "C:\sofeware\python\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: ./templates/joblist.html
+2021-04-27 16:56:27,338 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\jobs\views.py changed, reloading.
+2021-04-27 16:56:28,185 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 16:56:31,108 django.request 228 ERROR    Internal Server Error: /joblist/
+Traceback (most recent call last):
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\github\recruitment\recruitment\jobs\views.py", line 9, in joblist
+    template = loader.get_template('/templates/joblist.html')
+  File "C:\sofeware\python\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: /templates/joblist.html
+2021-04-27 16:56:41,121 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\jobs\views.py changed, reloading.
+2021-04-27 16:56:41,977 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 17:02:05,506 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 17:02:17,384 django.request 228 WARNING  Not Found: /account/register
+2021-04-27 17:02:29,780 django.request 228 WARNING  Not Found: /accounts/profile/
+2021-04-27 17:02:46,155 django.request 228 WARNING  Not Found: /accounts/profile/
+2021-04-27 17:03:15,684 django.request 228 WARNING  Not Found: /accounts/profile/
+2021-04-27 17:03:36,847 django.request 228 WARNING  Not Found: /accounts/profile/
+2021-04-27 17:03:49,164 django.request 228 WARNING  Not Found: /accounts/profile/
+2021-04-27 17:04:08,543 django.request 228 WARNING  Not Found: /accounts/profile/
+2021-04-27 17:04:21,924 django.request 228 WARNING  Not Found: /accounts/profile/
+2021-04-27 17:04:40,115 django.request 228 WARNING  Not Found: /accounts/profile/
+2021-04-27 17:09:22,539 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\settings\base.py changed, reloading.
+2021-04-27 17:09:23,617 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 17:09:27,465 django.request 228 WARNING  Not Found: /accounts/profile/
+2021-04-27 17:09:41,869 django.request 228 WARNING  Not Found: /rango/
+2021-04-27 17:09:53,452 django.request 228 WARNING  Not Found: /rango/
+2021-04-27 17:11:14,256 django.request 228 WARNING  Not Found: /rango/
+2021-04-27 17:11:22,032 django.request 228 WARNING  Not Found: /login
+2021-04-27 17:11:41,047 django.request 228 WARNING  Not Found: /rango/
+2021-04-27 17:11:51,743 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\settings\base.py changed, reloading.
+2021-04-27 17:11:52,757 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 17:12:04,910 django.request 228 WARNING  Not Found: /rango/
+2021-04-27 17:12:19,641 django.request 228 WARNING  Not Found: /rango/
+2021-04-27 17:12:34,135 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\settings\base.py changed, reloading.
+2021-04-27 17:12:35,285 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 17:14:12,069 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\settings\base.py changed, reloading.
+2021-04-27 17:14:13,159 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 17:14:16,596 django.request 228 WARNING  Not Found: /rango/
+2021-04-27 17:14:44,431 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\settings\base.py changed, reloading.
+2021-04-27 17:14:45,432 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 17:16:14,888 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\settings\base.py changed, reloading.
+2021-04-27 17:16:15,991 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 17:16:21,307 django.request 228 WARNING  Not Found: /accounts/
+2021-04-27 17:16:53,660 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\settings\base.py changed, reloading.
+2021-04-27 17:16:54,687 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 17:17:05,752 django.request 228 WARNING  Not Found: /accounts/
+2021-04-27 17:17:27,809 django.request 228 WARNING  Not Found: /accounts/
+2021-04-27 17:17:39,674 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\settings\base.py changed, reloading.
+2021-04-27 17:17:40,716 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 17:17:43,579 django.request 228 WARNING  Not Found: /accounts/
+2021-04-27 17:17:49,753 django.request 228 WARNING  Not Found: /accounts/profile/
+2021-04-27 17:19:41,346 django.request 228 WARNING  Not Found: /accounts/profile/
+2021-04-27 17:20:48,936 django.request 228 WARNING  Not Found: /favicon.ico
+2021-04-27 17:22:26,317 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\settings\base.py changed, reloading.
+2021-04-27 17:22:27,342 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 17:23:14,928 django.request 228 WARNING  Not Found: /
+2021-04-27 17:29:55,299 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\jobs\urls.py changed, reloading.
+2021-04-27 17:29:56,204 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 17:30:05,231 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\jobs\urls.py changed, reloading.
+2021-04-27 17:30:06,087 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 17:30:09,761 django.request 228 WARNING  Not Found: /accounts/profile/
+2021-04-27 17:30:28,865 django.request 228 WARNING  Not Found: /accounts/profile/
+2021-04-27 17:31:35,242 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\settings\base.py changed, reloading.
+2021-04-27 17:31:36,147 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 17:33:33,135 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\jobs\views.py changed, reloading.
+2021-04-27 17:33:34,006 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 17:34:46,549 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\jobs\views.py changed, reloading.
+2021-04-27 17:34:47,471 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 17:54:59,480 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\jobs\views.py changed, reloading.
+2021-04-27 17:55:00,465 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 17:58:17,243 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\jobs\views.py changed, reloading.
+2021-04-27 17:58:18,129 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 17:58:20,596 django.request 228 WARNING  Not Found: /job/3/
+2021-04-27 17:58:46,239 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\jobs\urls.py changed, reloading.
+2021-04-27 17:58:47,164 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 17:58:47,696 django.request 228 ERROR    Internal Server Error: /job/3/
+Traceback (most recent call last):
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\github\recruitment\recruitment\jobs\views.py", line 28, in detail
+    return render(request,'job.html',{'job':job})
+  File "C:\sofeware\python\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\sofeware\python\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\sofeware\python\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: job.html
+2021-04-27 18:00:40,647 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\jobs\views.py changed, reloading.
+2021-04-27 18:00:41,576 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 18:00:48,964 django.request 228 WARNING  Not Found: /account/login
+2021-04-27 18:01:35,256 django.request 228 WARNING  Not Found: /account/login
+2021-04-27 18:01:53,518 django.request 228 WARNING  Not Found: /account/login
+2021-04-27 18:02:12,981 django.request 228 WARNING  Not Found: /account/login
+2021-04-27 18:04:34,159 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\jobs\models.py changed, reloading.
+2021-04-27 18:04:35,055 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 18:04:59,210 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\jobs\models.py changed, reloading.
+2021-04-27 18:05:00,268 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 18:06:40,473 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\jobs\models.py changed, reloading.
+2021-04-27 18:06:41,488 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 18:07:56,582 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\jobs\models.py changed, reloading.
+2021-04-27 18:07:57,711 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 18:12:02,650 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 18:13:31,064 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\jobs\admin.py changed, reloading.
+2021-04-27 18:13:31,934 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 18:24:30,644 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\jobs\views.py changed, reloading.
+2021-04-27 18:24:31,609 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 18:38:56,121 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\jobs\urls.py changed, reloading.
+2021-04-27 18:38:57,040 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 18:39:07,399 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\jobs\urls.py changed, reloading.
+2021-04-27 18:39:08,315 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 18:46:02,245 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\jobs\views.py changed, reloading.
+2021-04-27 18:46:03,242 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 20:22:25,286 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\jobs\views.py changed, reloading.
+2021-04-27 20:22:26,324 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 20:23:47,250 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\settings\base.py changed, reloading.
+2021-04-27 20:23:48,258 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 20:24:14,146 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\settings\base.py changed, reloading.
+2021-04-27 20:24:15,168 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 20:25:33,574 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\jobs\views.py changed, reloading.
+2021-04-27 20:25:34,548 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 20:27:13,397 django.request 228 WARNING  Not Found: /r
+2021-04-27 20:30:25,563 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\jobs\admin.py changed, reloading.
+2021-04-27 20:30:26,443 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 20:32:15,100 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\jobs\admin.py changed, reloading.
+2021-04-27 20:32:15,962 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 20:32:59,950 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\jobs\admin.py changed, reloading.
+2021-04-27 20:33:00,796 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 20:40:27,096 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\jobs\views.py changed, reloading.
+2021-04-27 20:40:28,158 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 20:40:48,808 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\jobs\views.py changed, reloading.
+2021-04-27 20:40:49,681 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 20:41:15,583 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\jobs\views.py changed, reloading.
+2021-04-27 20:41:16,483 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 20:42:43,353 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\jobs\urls.py changed, reloading.
+2021-04-27 20:42:44,389 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 20:49:18,096 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-27 20:49:18,971 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 20:49:32,762 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-27 20:49:33,592 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 20:50:08,234 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-27 20:50:09,117 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 21:00:17,924 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-27 21:00:18,870 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 21:00:57,266 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-27 21:00:58,176 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 21:01:08,681 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-27 21:01:09,577 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 21:02:09,594 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-27 21:02:10,447 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-27 21:02:14,375 django.request 228 ERROR    Internal Server Error: /admin/interview/candidate/
+Traceback (most recent call last):
+  File "C:\sofeware\python\lib\site-packages\django\db\models\options.py", line 581, in get_field
+    return self.fields_map[field_name]
+KeyError: 'get_resume'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\utils.py", line 262, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\utils.py", line 293, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "C:\sofeware\python\lib\site-packages\django\db\models\options.py", line 583, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: Candidate has no field named 'get_resume'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\sofeware\python\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\sofeware\python\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\sofeware\python\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\templatetags\base.py", line 33, in render
+    return super().render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\library.py", line 214, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 342, in result_list
+    'results': list(results(cl)),
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 315, in results
+    yield ResultList(form, items_for_result(cl, res, form))
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 309, in __init__
+    super().__init__(*items)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 232, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\utils.py", line 271, in lookup_field
+    value = attr(obj)
+  File "D:\github\recruitment\recruitment\interview\admin.py", line 66, in get_resume
+    return mark_safe(u'<a href = "/resume/%s" target = "_blank">/a' % (resume[0].id),"查看简历")
+NameError: name 'resume' is not defined
+2021-04-30 16:40:47,811 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-30 16:40:51,722 django.request 228 WARNING  Not Found: /favicon.ico
+2021-04-30 16:41:06,164 django.request 228 ERROR    Internal Server Error: /admin/interview/candidate/
+Traceback (most recent call last):
+  File "C:\sofeware\python\lib\site-packages\django\db\models\options.py", line 581, in get_field
+    return self.fields_map[field_name]
+KeyError: 'get_resume'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\utils.py", line 262, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\utils.py", line 293, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "C:\sofeware\python\lib\site-packages\django\db\models\options.py", line 583, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: Candidate has no field named 'get_resume'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\sofeware\python\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\sofeware\python\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\sofeware\python\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\templatetags\base.py", line 33, in render
+    return super().render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\library.py", line 214, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 342, in result_list
+    'results': list(results(cl)),
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 315, in results
+    yield ResultList(form, items_for_result(cl, res, form))
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 309, in __init__
+    super().__init__(*items)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 232, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\utils.py", line 271, in lookup_field
+    value = attr(obj)
+  File "D:\github\recruitment\recruitment\interview\admin.py", line 66, in get_resume
+    return mark_safe(u'<a href = "/resume/%s" target = "_blank">/a' % (resume[0].id),"查看简历")
+NameError: name 'resume' is not defined
+2021-04-30 16:41:18,334 django.request 228 ERROR    Internal Server Error: /admin/interview/candidate/
+Traceback (most recent call last):
+  File "C:\sofeware\python\lib\site-packages\django\db\models\options.py", line 581, in get_field
+    return self.fields_map[field_name]
+KeyError: 'get_resume'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\utils.py", line 262, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\utils.py", line 293, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "C:\sofeware\python\lib\site-packages\django\db\models\options.py", line 583, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: Candidate has no field named 'get_resume'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\sofeware\python\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\sofeware\python\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\sofeware\python\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\templatetags\base.py", line 33, in render
+    return super().render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\library.py", line 214, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 342, in result_list
+    'results': list(results(cl)),
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 315, in results
+    yield ResultList(form, items_for_result(cl, res, form))
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 309, in __init__
+    super().__init__(*items)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 232, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\utils.py", line 271, in lookup_field
+    value = attr(obj)
+  File "D:\github\recruitment\recruitment\interview\admin.py", line 66, in get_resume
+    return mark_safe(u'<a href = "/resume/%s" target = "_blank">/a' % (resume[0].id),"查看简历")
+NameError: name 'resume' is not defined
+2021-04-30 16:43:27,601 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-30 16:43:28,475 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-30 16:43:31,435 django.request 228 ERROR    Internal Server Error: /admin/interview/candidate/
+Traceback (most recent call last):
+  File "C:\sofeware\python\lib\site-packages\django\db\models\options.py", line 581, in get_field
+    return self.fields_map[field_name]
+KeyError: 'get_resume'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\utils.py", line 262, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\utils.py", line 293, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "C:\sofeware\python\lib\site-packages\django\db\models\options.py", line 583, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: Candidate has no field named 'get_resume'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\sofeware\python\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\sofeware\python\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\sofeware\python\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\templatetags\base.py", line 33, in render
+    return super().render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\library.py", line 214, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 342, in result_list
+    'results': list(results(cl)),
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 315, in results
+    yield ResultList(form, items_for_result(cl, res, form))
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 309, in __init__
+    super().__init__(*items)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 232, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\utils.py", line 271, in lookup_field
+    value = attr(obj)
+  File "D:\github\recruitment\recruitment\interview\admin.py", line 66, in get_resume
+    return mark_safe(u'<a href = "/resume/%s" target = "_blank">/a' % (resumes[0].id),"查看简历")
+TypeError: mark_safe() takes 1 positional argument but 2 were given
+2021-04-30 16:44:09,799 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-30 16:44:10,663 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-30 16:44:13,052 django.request 228 ERROR    Internal Server Error: /admin/interview/candidate/
+Traceback (most recent call last):
+  File "C:\sofeware\python\lib\site-packages\django\db\models\options.py", line 581, in get_field
+    return self.fields_map[field_name]
+KeyError: 'get_resume'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\utils.py", line 262, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\utils.py", line 293, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "C:\sofeware\python\lib\site-packages\django\db\models\options.py", line 583, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: Candidate has no field named 'get_resume'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\sofeware\python\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\sofeware\python\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\sofeware\python\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\templatetags\base.py", line 33, in render
+    return super().render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\library.py", line 214, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 342, in result_list
+    'results': list(results(cl)),
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 315, in results
+    yield ResultList(form, items_for_result(cl, res, form))
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 309, in __init__
+    super().__init__(*items)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 232, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\utils.py", line 271, in lookup_field
+    value = attr(obj)
+  File "D:\github\recruitment\recruitment\interview\admin.py", line 66, in get_resume
+    return mark_safe(u'<a href = "/resume/%s" target = "_blank">%s</a' % (resumes[0].id),"查看简历")
+TypeError: not enough arguments for format string
+2021-04-30 16:44:17,892 django.request 228 ERROR    Internal Server Error: /admin/interview/candidate/
+Traceback (most recent call last):
+  File "C:\sofeware\python\lib\site-packages\django\db\models\options.py", line 581, in get_field
+    return self.fields_map[field_name]
+KeyError: 'get_resume'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\utils.py", line 262, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\utils.py", line 293, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "C:\sofeware\python\lib\site-packages\django\db\models\options.py", line 583, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: Candidate has no field named 'get_resume'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\base.py", line 145, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\sofeware\python\lib\site-packages\django\core\handlers\base.py", line 143, in _get_response
+    response = response.render()
+  File "C:\sofeware\python\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\sofeware\python\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\sofeware\python\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\templatetags\base.py", line 33, in render
+    return super().render(context)
+  File "C:\sofeware\python\lib\site-packages\django\template\library.py", line 214, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 342, in result_list
+    'results': list(results(cl)),
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 315, in results
+    yield ResultList(form, items_for_result(cl, res, form))
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 309, in __init__
+    super().__init__(*items)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 232, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "C:\sofeware\python\lib\site-packages\django\contrib\admin\utils.py", line 271, in lookup_field
+    value = attr(obj)
+  File "D:\github\recruitment\recruitment\interview\admin.py", line 66, in get_resume
+    return mark_safe(u'<a href = "/resume/%s" target = "_blank">%s</a' % (resumes[0].id),"查看简历")
+TypeError: not enough arguments for format string
+2021-04-30 16:46:08,870 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-30 16:46:09,785 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-30 16:48:17,625 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-30 16:48:18,626 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-30 16:48:35,957 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\admin.py changed, reloading.
+2021-04-30 16:48:36,897 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-30 17:26:59,599 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\settings\base.py changed, reloading.
+2021-04-30 17:27:00,882 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-30 17:30:09,276 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\settings\base.py changed, reloading.
+2021-04-30 17:30:10,208 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-30 17:32:00,983 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\recruitment\urls.py changed, reloading.
+2021-04-30 17:32:01,982 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
+2021-04-30 17:34:56,847 django.utils.autoreload 222 INFO     D:\github\recruitment\recruitment\interview\models.py changed, reloading.
+2021-04-30 17:34:57,860 django.utils.autoreload 598 INFO     Watching for file changes with StatReloader
